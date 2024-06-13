@@ -1,0 +1,9 @@
+{% extends 'main/base.html' %}
+{% block title %}Results{% endblock %}
+{% block content %}
+<ul>
+    {% for result in results %}
+    <li>{{ result.title }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
